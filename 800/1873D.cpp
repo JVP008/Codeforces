@@ -11,11 +11,6 @@ int main (){
         cin>>n>>k;
         string s;
         cin>>s;
-        // set<string>unique;
-        // int unique_size = unique.size(); 
-        // if (unique_size==1 && s[0]=='B' && k==unique_size ){
-        //     cout<<1<<"\n";
-        // }
         int i = 0;
         int j = k-1;
         while(i<=n){
