@@ -4,15 +4,21 @@ int main (){
     ios::sync_with_stdio(0);
     cin.tie(0);
 
+    int n;
+    cin>>n;
     string s;
     cin>>s;
-    long long size = s.size();
-    if (s[size-1]=='e'){
-        s += "r";
+    string t;
+    cin>>t;
+    for (int i = 0;i<n;i++){
+        if (s[i]!='*' && t[i]!='*'){
+            if (s[i]!=t[i]){
+                cout<<"No";
+                return 0;
+            }
+        }
     }
-    else{
-        s+= "er";
-    }
-    cout<<s;
+    cout<<"Yes";
+    
     return 0;
 }
