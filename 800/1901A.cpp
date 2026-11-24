@@ -20,7 +20,7 @@ void solve(){
     int maxx = INT_MIN;
     int size = arr.size();
     for (int i=1;i<size;i++){
-        if (arr[i]==size - 1){
+        if (i==size - 1){
             maxx = max(maxx,2*(arr[i] - arr[i-1]));
         }
         else{
